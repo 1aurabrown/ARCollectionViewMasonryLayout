@@ -310,7 +310,7 @@
 {
     NSArray *attributes = self.attributesGrid.allItemAttributes;
     // This can happen during a reload, returning nil is no problem.
-    if (path.row > attributes.count - 1) return nil;
+    if (path.row + 1 > attributes.count) return nil;
     return attributes[path.row];
 }
 
